@@ -1,0 +1,13 @@
+{
+  "name": "dynasty-trade-calculator",
+  "version": "1.0.0",
+  "description": "Dynasty fantasy football trade calculator with SQLite-backed player and pick values.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "seed": "node scripts/seed.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
