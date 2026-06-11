@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Import | Dynasty Leverage</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="shell admin-shell">
+      <section class="hero admin-hero">
+        <div>
+          <p class="eyebrow">Admin tools</p>
+          <h1>Import Values</h1>
+        </div>
+        <a class="text-link" href="/">Calculator</a>
+      </section>
+
+      <section class="admin-panel">
+        <div class="admin-grid">
+          <label>
+            <span>Admin token</span>
+            <input id="tokenInput" type="password" placeholder="ADMIN_TOKEN">
+          </label>
+
+          <label>
+            <span>Import mode</span>
+            <select id="modeInput">
+              <option value="upsert">Update/add players</option>
+              <option value="replace">Replace all values</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="json-field">
+          <span>Player and pick JSON</span>
+          <textarea id="jsonInput" spellcheck="false"></textarea>
+        </label>
+
+        <div class="admin-actions">
+          <button id="sampleButton" type="button">Load sample</button>
+          <button id="importButton" type="button">Import values</button>
+        </div>
+
+        <pre id="adminStatus" class="admin-status">Ready.</pre>
+      </section>
+    </main>
+
+    <script src="/admin.js"></script>
+  </body>
+</html>
